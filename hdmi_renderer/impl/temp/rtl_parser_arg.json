@@ -3,7 +3,22 @@
     "Files": [
         {
             "Library": "work",
+            "Path": "E:/Documents/Coding/HDMI Renderer/hdmi_renderer/src/clk_gen.vhd",
+            "Type": "vhdl"
+        },
+        {
+            "Library": "work",
+            "Path": "E:/Documents/Coding/HDMI Renderer/hdmi_renderer/src/clkdiv/gowin_clkdiv/gowin_clkdiv.vhd",
+            "Type": "vhdl"
+        },
+        {
+            "Library": "work",
             "Path": "E:/Documents/Coding/HDMI Renderer/hdmi_renderer/src/hvo.vhd",
+            "Type": "vhdl"
+        },
+        {
+            "Library": "work",
+            "Path": "E:/Documents/Coding/HDMI Renderer/hdmi_renderer/src/rpll/gowin_rpll/gowin_rpll.vhd",
             "Type": "vhdl"
         }
     ],

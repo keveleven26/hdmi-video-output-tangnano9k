@@ -1,0 +1,28 @@
+[
+    {
+        "InstFile": "E:/Documents/Coding/HDMI Renderer/hdmi_renderer/src/clk_gen.vhd",
+        "InstLine": 4,
+        "InstName": "clk_gen",
+        "ModuleFile": "E:/Documents/Coding/HDMI Renderer/hdmi_renderer/src/clk_gen.vhd",
+        "ModuleLine": 4,
+        "ModuleName": "clk_gen",
+        "SubInsts": [
+            {
+                "InstFile": "E:/Documents/Coding/HDMI Renderer/hdmi_renderer/src/clk_gen.vhd",
+                "InstLine": 41,
+                "InstName": "rpll",
+                "ModuleFile": "E:/Documents/Coding/HDMI Renderer/hdmi_renderer/src/rpll/gowin_rpll/gowin_rpll.vhd",
+                "ModuleLine": 14,
+                "ModuleName": "Gowin_rPLL"
+            },
+            {
+                "InstFile": "E:/Documents/Coding/HDMI Renderer/hdmi_renderer/src/clk_gen.vhd",
+                "InstLine": 48,
+                "InstName": "clkdiv",
+                "ModuleFile": "E:/Documents/Coding/HDMI Renderer/hdmi_renderer/src/clkdiv/gowin_clkdiv/gowin_clkdiv.vhd",
+                "ModuleLine": 14,
+                "ModuleName": "Gowin_CLKDIV"
+            }
+        ]
+    }
+]

@@ -5,6 +5,10 @@
     <Version>5</Version>
     <Device name="GW1NR-9C" pn="GW1NR-LV9QN88PC6/I5">gw1nr9c-004</Device>
     <FileList>
+        <File path="src/clk_gen.vhd" type="file.vhdl" enable="1"/>
+        <File path="src/clkdiv/gowin_clkdiv/gowin_clkdiv.vhd" type="file.vhdl" enable="1"/>
         <File path="src/hvo.vhd" type="file.vhdl" enable="1"/>
+        <File path="src/rpll/gowin_rpll/gowin_rpll.vhd" type="file.vhdl" enable="1"/>
+        <File path="src/hvo.cst" type="file.cst" enable="1"/>
     </FileList>
 </Project>
