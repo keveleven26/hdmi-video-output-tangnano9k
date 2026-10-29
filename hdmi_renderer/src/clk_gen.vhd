@@ -36,6 +36,7 @@ architecture rtl of clk_gen is
     signal rst_pixel : std_logic;
     signal lock : std_logic;
     signal reset_async : std_logic;
+    signal rst_sync : std_logic_vector(1 downto 0);
 
 begin
     rpll: Gowin_rPLL
@@ -56,8 +57,15 @@ begin
     clk_pixel_out <= clk_pixel;
     rpll_lock <= lock;
 
-    reset_async <= not lock or rst_n or reset_async;
+    reset_async <= not lock or not rst_n;
     
-    process (clk_pixel) begin
-        if 
+    sync_reset : process (clk_pixel, reset_async) 
+    begin
+        if reset_async = '1' then
+            rst_sync <= (others => '1');
+        elsif rising_edge(clk_pixel) then
+            rst_sync <= rst_sync(0) & '0';
+        end if;
+    end process;
+    rst_pixel_out <= rst_sync(1);
 end rtl;
